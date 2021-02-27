@@ -121,25 +121,25 @@ function App() {
 				</div>
 				{loading ? null : (
 				<div className={styles.data}>
-					<div style={{color: 'green'}}>
+					<div >
 						{country !== "false" ? (
-							<>Confirmed : {numberWithCommas(data[data.length - 1])}</>
+							<>Confirmed : <span style={{color: 'green'}}>{numberWithCommas(data[data.length - 1])}</span></>
 						) : (
-							<>Confirmed : {numberWithCommas(data[0])}</>
+							<>Confirmed : <span style={{color: 'green'}}>{numberWithCommas(data[0])}</span></>
 						)}
 					</div>
-					<div style={{color: 'blue'}}>
+					<div >
 						{country !== "false" ? (
-							<>Recovered : {numberWithCommas(data[data.length - 1])}</>
+							<>Recovered : <span style={{color: 'blue'}}>{numberWithCommas(data[data.length - 1])}</span></>
 						) : (
-							<>Recovered : {numberWithCommas(data[1])}</>
+							<>Recovered : <span style={{color: 'blue'}}>{numberWithCommas(data[1])}</span></>
 						)}
 					</div>
-					<div style={{color: 'red'}}>
+					<div>
 						{country !== "false" ? (
-							<>Death : {numberWithCommas(data[data.length - 1])}</>
+							<>Death : <span style={{color: 'red'}}>{numberWithCommas(data[data.length - 1])}</span></>
 						) : (
-							<>Death : {numberWithCommas(data[2])}</>
+							<>Death : <span style={{color: 'red'}}>{numberWithCommas(data[2])}</span></>
 						)}
 					</div>
 				</div>
