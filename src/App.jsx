@@ -130,14 +130,14 @@ function App() {
 					</div>
 					<div >
 						{country !== "false" ? (
-							<>Recovered : <span style={{color: 'blue'}}>{numberWithCommas(data[data.length - 1])}</span></>
+							<>Recovered : <span style={{color: 'blue'}}>{numberWithCommas(recoveryCase[recoveryCase.length - 1])}</span></>
 						) : (
 							<>Recovered : <span style={{color: 'blue'}}>{numberWithCommas(data[1])}</span></>
 						)}
 					</div>
 					<div>
 						{country !== "false" ? (
-							<>Death : <span style={{color: 'red'}}>{numberWithCommas(data[data.length - 1])}</span></>
+							<>Death : <span style={{color: 'red'}}>{numberWithCommas(deathCase[deathCase.length - 1])}</span></>
 						) : (
 							<>Death : <span style={{color: 'red'}}>{numberWithCommas(data[2])}</span></>
 						)}

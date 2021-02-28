@@ -8,12 +8,12 @@
 
 .data {
   font-family: 'Poppins', sans-serif;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  font-weight: 900;
+  margin: 50px auto 30px 40px;
 }
 
-.data:nth-child(1) {
-  color: blue;
+.data > div {
+  margin-top: 20px;
 }
 
 .card {

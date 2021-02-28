@@ -1,9 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import styles from "./dropdown.module.css";
-import Loading from './loading'
-
-import arrowIcon from '../asset/angle-down.svg'
 
 const GetCountry = ({handleCountry}) => {
     const [listCountry, setListCountry] = useState(false);
@@ -27,11 +24,6 @@ const GetCountry = ({handleCountry}) => {
                 console.log(error.config);
             });
     }, []);
-
-
-    const handleCountryList = (value) => {
-        setListCountry(value)
-    }
 
     if (!listCountry) {
         return (
